@@ -1,0 +1,22 @@
+server:
+   port: 8888
+
+logging:
+  file:
+    path: logs
+    name: my-info.log
+
+
+spring:
+   application:
+          name: report
+   datasource:
+       driver-class-name: com.mysql.cj.jdbc.Driver
+       url: jdbc:mysql://localhost:3306/snow
+       username: root
+       password: wxh123456
+
+mybatis:
+    type-aliases-package: com.course.model
+    mapper-locations:
+       - mapper/*
